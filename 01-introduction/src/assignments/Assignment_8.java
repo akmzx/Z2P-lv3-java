@@ -15,7 +15,7 @@ public class Assignment_8 {
 		number = input.substring(input.length() - 6);
 		input = input.replace("/", " ").replace("(", " ");
 		result = input.split(" ");
-		
+
 		System.out.println("Township: " + result[1]);
 		System.out.println("Number: " + number);
 		sc.close();
