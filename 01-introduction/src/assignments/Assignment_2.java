@@ -22,7 +22,7 @@ public class Assignment_2 {
 			} else {
 				System.out.println("You are abnormal!");
 			}
-			System.out.print("If you want to exit, please enter 'Y or y': ");
+			System.out.print("If you want to exit, please enter 'Y' or 'y': ");
 			exit = sc.next();
 		} while (!exit.equalsIgnoreCase("Y"));
 		
