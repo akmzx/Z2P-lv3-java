@@ -9,6 +9,8 @@ public class Assignment_11 {
 		System.out.println("Enter your mark: ");
 		int input = sc.nextInt();
 		checkInput(input);
+		
+		sc.close();
 	}
 
 	private static void checkInput(int mark) throws InvalidMarkException {
