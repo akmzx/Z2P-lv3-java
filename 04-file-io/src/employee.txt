@@ -1,0 +1,6 @@
+1001	Kyaw Kyaw	Mandalay
+1002	Aung Aung	Yangon
+1003	Hla Hla	Yangon
+1004	Nilar	Monywa
+1005	Honey	Mandalay
+1006	May	Yangon

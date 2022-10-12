@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="526.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bms.controller.BookSearchController">
+   <children>
+      <ScrollPane layoutX="37.0" layoutY="109.0" prefHeight="339.0" prefWidth="787.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="book_table" prefHeight="339.0" prefWidth="787.0">
+                    <columns>
+                      <TableColumn fx:id="col_code" prefWidth="75.0" text="Code" />
+                      <TableColumn fx:id="col_title" prefWidth="315.0" text="Title" />
+                        <TableColumn fx:id="col_author" prefWidth="157.0" text="Author" />
+                        <TableColumn fx:id="col_category" prefWidth="140.0" text="Category" />
+                        <TableColumn fx:id="col_price" prefWidth="99.0" text="Price" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <TextField fx:id="txt_title" layoutX="37.0" layoutY="43.0" prefHeight="32.0" prefWidth="238.0" promptText="Book Title" />
+      <TextField fx:id="txt_category" layoutX="291.0" layoutY="43.0" prefHeight="32.0" prefWidth="238.0" promptText="Book Category" />
+      <TextField fx:id="txt_author" layoutX="544.0" layoutY="43.0" prefHeight="32.0" prefWidth="238.0" promptText="Book Author" />
+      <ImageView fitHeight="41.0" fitWidth="48.0" layoutX="786.0" layoutY="37.0" onMouseClicked="#search_click" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../photos/search.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button layoutX="743.0" layoutY="459.0" mnemonicParsing="false" onAction="#btn_back_click" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: #660066#660066;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

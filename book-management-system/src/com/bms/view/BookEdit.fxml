@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bms.controller.BookEditController">
+   <children>
+      <Label layoutX="235.0" layoutY="41.0" text="Edit/ Delete Book" textFill="#066b12">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="74.0" layoutY="83.0" prefHeight="2.0" prefWidth="598.0" />
+      <Pane layoutX="74.0" layoutY="100.0" prefHeight="90.0" prefWidth="598.0" style="-fx-background-color: #ffeecc#ffeecc;">
+         <children>
+            <TextField fx:id="txt_code" layoutX="98.0" layoutY="24.0" prefHeight="38.0" prefWidth="371.0" promptText="Enter Book Code to Search" />
+            <ImageView fitHeight="46.0" fitWidth="59.0" layoutX="468.0" layoutY="20.0" onMouseClicked="#btn_search_click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../photos/search.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="175.0" layoutY="207.0" text="Title">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_title" layoutX="175.0" layoutY="230.0" prefHeight="31.0" prefWidth="347.0" promptText="Book Title" />
+      <Label layoutX="175.0" layoutY="273.0" text="Price">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_price" layoutX="175.0" layoutY="296.0" prefHeight="31.0" prefWidth="347.0" promptText="Book Price" />
+      <Label layoutX="175.0" layoutY="338.0" text="Author">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbo_author" layoutX="175.0" layoutY="361.0" prefHeight="31.0" prefWidth="347.0" promptText="Choose Author" />
+      <Label layoutX="175.0" layoutY="399.0" text="Category">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbo_category" layoutX="174.0" layoutY="423.0" prefHeight="31.0" prefWidth="347.0" promptText="Choose Category" />
+      <Button layoutX="188.0" layoutY="477.0" mnemonicParsing="false" onAction="#btn_edit_click" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #008000#008000;" text="Edit" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="300.0" layoutY="477.0" mnemonicParsing="false" onAction="#btn_delete_click" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #ff3300#ff3300;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="412.0" layoutY="477.0" mnemonicParsing="false" onAction="#btn_back_click" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #660066#660066;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

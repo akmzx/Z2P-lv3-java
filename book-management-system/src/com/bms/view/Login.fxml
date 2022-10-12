@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="com.bms.controller.LoginController" prefHeight="567.0" prefWidth="653.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17">
+   <children>
+      <Pane layoutY="47.0" prefHeight="74.0" prefWidth="653.0" style="-fx-background-color: #006622#006622;">
+         <children>
+            <Label layoutX="232.0" layoutY="17.0" text="Please Login !" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="173.0" layoutY="152.0" text="Email">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_email" layoutX="173.0" layoutY="181.0" prefHeight="35.0" prefWidth="294.0" promptText="example@gmail.com" />
+      <Label layoutX="173.0" layoutY="243.0" text="Password">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txt_password" layoutX="171.0" layoutY="272.0" prefHeight="35.0" prefWidth="294.0" promptText="password" />
+      <Button layoutX="345.0" layoutY="317.0" mnemonicParsing="false" onAction="#btn_login_click" prefHeight="35.0" prefWidth="118.0" style="-fx-background-color: #00cc66#00cc66;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
