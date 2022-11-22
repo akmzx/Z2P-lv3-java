@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="739.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lbms.controller.BookController">
+   <children>
+      <Pane layoutX="14.0" layoutY="97.0" onMouseClicked="#pane_bookList_clicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #B9FFF8;">
+         <children>
+            <Label layoutX="85.0" layoutY="85.0" text="List">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane layoutX="270.0" layoutY="97.0" onMouseClicked="#pane_edit_clicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #6FEDD6;">
+         <children>
+            <Label layoutX="83.0" layoutY="85.0" text="Edit">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Label layoutX="304.0" layoutY="14.0" text="Book Menu">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Pane layoutX="525.0" layoutY="97.0" onMouseClicked="#pane_edit_clicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FF9551;">
+         <children>
+            <Label layoutX="51.0" layoutY="85.0" text="Edit/Delete">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Separator layoutX="269.0" layoutY="49.0" prefWidth="200.0" />
+      <Pane layoutX="129.0" layoutY="337.0" onMouseClicked="#pane_borrow_clicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FF4A4A;">
+         <children>
+            <Label layoutX="68.0" layoutY="85.0" text="Borrow">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="425.0" layoutY="337.0" onMouseClicked="#pane_return_clicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E0D98C;">
+         <children>
+            <Label layoutX="71.0" layoutY="85.0" text="Return">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

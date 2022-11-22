@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="569.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lbms.controller.MemberSearchController">
+   <children>
+      <ScrollPane layoutX="43.0" layoutY="159.0" prefHeight="339.0" prefWidth="787.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="member_table" prefHeight="339.0" prefWidth="787.0">
+                    <columns>
+                      <TableColumn fx:id="col_card_id" prefWidth="75.0" text="Card ID" />
+                      <TableColumn fx:id="col_name" prefWidth="129.59993743896484" text="Name" />
+                        <TableColumn fx:id="col_roll_no" prefWidth="80.80000305175781" text="Roll No" />
+                        <TableColumn fx:id="col_year" prefWidth="106.39996337890625" text="Year" />
+                        <TableColumn fx:id="col_academic_year" prefWidth="120.00003051757812" text="Academic Year" />
+                        <TableColumn fx:id="col_created_date" minWidth="0.7999267578125" prefWidth="140.0" text="Created Date" />
+                        <TableColumn fx:id="col_expired_date" prefWidth="142.39996337890625" text="Expired Date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <TextField fx:id="txt_card_id" layoutX="150.0" layoutY="92.0" prefHeight="32.0" prefWidth="238.0" promptText="Enter Card ID" />
+      <TextField fx:id="txt_name" layoutX="469.0" layoutY="93.0" prefHeight="32.0" prefWidth="238.0" promptText="Enter Name" />
+      <ImageView fitHeight="41.0" fitWidth="48.0" layoutX="729.0" layoutY="89.0" onMouseClicked="#img_search_clicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../photos/search.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button layoutX="749.0" layoutY="509.0" mnemonicParsing="false" onAction="#btn_back_clicked" prefHeight="32.0" prefWidth="83.0" style="-fx-background-color: #660066#660066;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="-1.0" prefHeight="66.0" prefWidth="882.0" style="-fx-background-color: #5DA7DB;">
+         <children>
+            <Label layoutX="365.0" layoutY="17.0" text="Member Search" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

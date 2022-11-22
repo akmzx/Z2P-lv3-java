@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lbms.controller.LibrarianRegisterController">
+   <children>
+      <Label layoutX="218.0" layoutY="14.0" text="Librarian Register">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="96.0" text="Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_name" layoutX="245.0" layoutY="93.0" prefHeight="37.0" prefWidth="228.0" promptText="Enter Your Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="127.0" layoutY="152.0" text="Email">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_email" layoutX="245.0" layoutY="149.0" prefHeight="37.0" prefWidth="228.0" promptText="Enter Your Email">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="127.0" layoutY="204.0" text="Password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="127.0" layoutY="258.0" text="NRC No">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_nrcno" layoutX="245.0" layoutY="255.0" prefHeight="37.0" prefWidth="228.0" promptText="Enter Your NRC No">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="127.0" layoutY="311.0" text="Phone">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_phone" layoutX="245.0" layoutY="308.0" prefHeight="37.0" prefWidth="228.0" promptText="Enter Your Phone Number">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="86.0" layoutY="421.0" text="If you already have an account, Please ">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="460.0" layoutY="421.0" onMouseClicked="#label_login_clicked" text="Login" textFill="#5b70d9" underline="true">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="429.0" layoutY="363.0" mnemonicParsing="false" onAction="#btn_register_clicked" text="Register">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="pw_password" layoutX="245.0" layoutY="200.0" prefHeight="38.0" prefWidth="228.0" promptText="Enter Your Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+   </children>
+</AnchorPane>

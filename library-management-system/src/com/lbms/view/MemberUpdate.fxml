@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="574.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lbms.controller.MemberUpdateController">
+   <children>
+      <Label layoutX="235.0" layoutY="41.0" text="Update/ Delete Member" textFill="#066b12">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="74.0" layoutY="83.0" prefHeight="2.0" prefWidth="598.0" />
+      <Pane layoutX="74.0" layoutY="100.0" prefHeight="90.0" prefWidth="598.0" style="-fx-background-color: #ffeecc#ffeecc;">
+         <children>
+            <TextField fx:id="txt_search_card_id" layoutX="117.0" layoutY="26.0" prefHeight="38.0" prefWidth="159.0" promptText="Enter Card ID" />
+            <TextField fx:id="txt_search_name" layoutX="305.0" layoutY="26.0" prefHeight="38.0" prefWidth="159.0" promptText="Enter Name" />
+            <ImageView fitHeight="46.0" fitWidth="59.0" layoutX="486.0" layoutY="22.0" onMouseClicked="#img_search_clicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../photos/search.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="191.0" layoutY="206.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_name" layoutX="192.0" layoutY="228.0" prefHeight="30.0" prefWidth="345.0" promptText="Enter Name" />
+      <Label layoutX="191.0" layoutY="347.0" text="Year">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="192.0" layoutY="418.0" prefHeight="31.0" prefWidth="110.0" text="Academic Year">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="190.0" layoutY="508.0" mnemonicParsing="false" onAction="#btn_update_clicked" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #008000#008000;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="320.0" layoutY="508.0" mnemonicParsing="false" onAction="#btn_delete_clicked" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #ff3300#ff3300;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="448.0" layoutY="508.0" mnemonicParsing="false" onAction="#btn_back_clicked" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #660066#660066;" text="Back" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="txt_academic_year" layoutX="192.0" layoutY="449.0" prefHeight="30.0" prefWidth="345.0" promptText="Enter Academic Year" />
+      <Label layoutX="191.0" layoutY="278.0" text="Roll No">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_roll_no" layoutX="192.0" layoutY="300.0" prefHeight="30.0" prefWidth="345.0" promptText="Enter Roll No" />
+      <ComboBox fx:id="cbo_year" layoutX="192.0" layoutY="369.0" prefHeight="30.0" prefWidth="345.0" promptText="Choose Year" />
+   </children>
+</AnchorPane>

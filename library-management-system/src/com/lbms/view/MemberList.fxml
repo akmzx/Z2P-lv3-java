@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lbms.controller.MemberListController">
+   <children>
+      <ScrollPane layoutX="25.0" layoutY="75.0" prefHeight="450.0" prefWidth="800.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="member_table" prefHeight="450.0" prefWidth="800.0">
+                    <columns>
+                      <TableColumn fx:id="col_card_id" prefWidth="88.00000077486038" text="Card ID" />
+                      <TableColumn fx:id="col_name" prefWidth="128.79998779296875" text="Name" />
+                        <TableColumn fx:id="col_roll_no" minWidth="0.0" prefWidth="92.79998779296875" text="Roll No" />
+                        <TableColumn fx:id="col_year" prefWidth="109.5999755859375" text="year" />
+                        <TableColumn fx:id="col_academic_year" prefWidth="116.0" text="Academic Year" />
+                        <TableColumn fx:id="col_created_date" prefWidth="128.7999267578125" text="Created Date" />
+                        <TableColumn fx:id="col_expired_date" prefWidth="136.800048828125" text="Expired_Date" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Label layoutX="363.0" layoutY="14.0" text="Member List">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="730.0" layoutY="553.0" mnemonicParsing="false" onAction="#btn_back_clicked" prefHeight="22.0" prefWidth="94.0" text="Back">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="332.0" layoutY="49.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

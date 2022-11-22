@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lbms.controller.MainController">
+   <children>
+      <Pane layoutX="14.0" layoutY="86.0" onMouseClicked="#pane_book_clicked" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../photos/book.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="73.0" layoutY="171.0" text="Books">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="294.0" layoutY="86.0" onMouseClicked="#pane_member_clicked" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../photos/authors.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="58.0" layoutY="171.0" text="Members">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Pane prefHeight="56.0" prefWidth="508.0" style="-fx-background-color: #00ABB3;">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="223.0" layoutY="11.0" text="Menu" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="325.0" onMouseClicked="#pane_librarian_clicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #164587;">
+         <children>
+            <Label layoutX="57.0" layoutY="171.0" text="Librarians">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="294.0" layoutY="325.0" onMouseClicked="#pane_author_clicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #845684;">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="65.0" layoutY="171.0" text="Authors">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
